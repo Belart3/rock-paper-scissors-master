@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="title-ctn">
+        <img src="images/logo.svg" alt="">
+      </div>
+      <div class="score-ctn">
+        <h4>Score</h4>
+        <div class="scores">
+          <span id="score">0</span>
+          <p class="score">:</p>
+          <span id="AI-score">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main id="main">
+    <div class="main-container display-on">
+      <div class="game-buttons user">
+        <div class="paper"></div>
+      </div>
+      <div class="game-buttons user">
+        <div class="scissors"></div>
+      </div>
+      <div class="game-buttons user">
+        <div class="rock"></div>
+      </div>
+    </div>
+    <div class="game-play-container display-off">
+      <div class="play-ctn">
+        <h6>You Picked</h6>
+        <div class="game-buttons">
+          <div class="player"></div>
+        </div>
+      </div>
+      <div class="game-status-ctn desktop">
+        <h4 id="game-status" class="display-off">You Win</h4>
+        <button id="replay" class="display-off">Play Again</button>
+      </div>
+      <div class="play-ctn">
+        <h6>The House Picked</h6>
+        <div class="game-buttons">
+          <div class="computer"></div>
+        </div>
+      </div>
+    </div>
+    <div class="rules-ctn">
+      <button class="rules-button"><p>rules</p></button>
+      <div class="game-difficulty">
+        <a href="index.html">
+          <div class="easy">
+            <p class="modes">Easy</p>
+          </div>
+        </a>
+        <a href="bonus.html">
+          <div class="hard">
+            <p class="modes">Hard</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="rules display-off">
+      <img src="images/icon-close.svg" alt="" id="close">
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
